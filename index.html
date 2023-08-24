@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Boda de Nataly</h1>
+    </header>
+    <h2>Productos para la Boda</h2>
+    <section class="products">
+     
+        <div class="product">
+            <img src="img/producto1.jpg" alt="Producto 1">
+            <button class="select-button" data-product="Producto 1">Seleccionar</button>
+        </div>
+        <div class="product">
+            <img src="img/producto2.jpg" alt="Producto 2">
+            <button class="select-button" data-product="Producto 2">Seleccionar</button>
+        </div>
+        <div class="product">
+            <img src="producto3.jpg" alt="Producto 3">
+            <button class="select-button" data-product="Producto 3">Seleccionar</button>
+        </div>
+        <!-- Agregar más productos aquí -->
+    </section>
+    
+    <section class="selected-products">
+        <h2>Productos Seleccionados</h2>
+        <ul id="selected-products-list">
+            <!-- Aquí se mostrarán los productos seleccionados -->
+        </ul>
+        <button id="confirm-button">Confirmar Envío</button>
+    </section>
+
+    <footer>
+        <p>Contacto: </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
