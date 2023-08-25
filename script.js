@@ -13,7 +13,7 @@ selectButtons.forEach(button => {
 });
 
 confirmButton.addEventListener('click', () => {
-    alert("Producto seleccionado");// Aquí puedes implementar la lógica para enviar un correo con la información de los productos seleccionados
+   
 });
 
 function updateSelectedProductsList() {

@@ -8,9 +8,10 @@
 </head>
 <body>
     <header>
-        <h1>Boda de Nataly</h1>
+        <h1>Acompañame en este nuevo comienzo </h1>
     </header>
-    <h2>Productos para la Boda</h2>
+    <h2>Mi lista de deseos </h2>
+    <p>Selecciona el/los productos que deseas llevar para este festejo, te recordamos llenar el formulario que se encuentra en la parte de abajo de  la pagina </p> 
     <section class="products">
      
         <div class="product">
@@ -22,20 +23,47 @@
             <button class="select-button" data-product="Producto 2">Seleccionar</button>
         </div>
         <div class="product">
-            <img src="producto3.jpg" alt="Producto 3">
+            <img src="img/producto3.jpg" alt="Producto 3">
+            <button class="select-button" data-product="Producto 3">Seleccionar</button>
+        </div>
+        
+        <div class="product">
+            <img src="img/producto4.jpg" alt="Producto 1">
+            <button class="select-button" data-product="Producto 1">Seleccionar</button>
+        </div>
+        <div class="product">
+            <img src="img/producto5.jpg" alt="Producto 2">
+            <button class="select-button" data-product="Producto 2">Seleccionar</button>
+        </div>
+        <div class="product">
+            <img src="img/producto6.jpg" alt="Producto 3">
             <button class="select-button" data-product="Producto 3">Seleccionar</button>
         </div>
         <!-- Agregar más productos aquí -->
     </section>
     
+    
     <section class="selected-products">
         <h2>Productos Seleccionados</h2>
-        <ul id="selected-products-list">
-            <!-- Aquí se mostrarán los productos seleccionados -->
-        </ul>
-        <button id="confirm-button">Confirmar Envío</button>
+        
+        <form action="procesar_registro.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br> 
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br><br>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required><br><br>
+            <ul id="selected-products-list">
+                <!-- Aquí se mostrarán los productos seleccionados -->
+            </ul>
+            
+         <button id="confirm-button">Confirmar Envío</button>
+         
+        </form>
+        
     </section>
 
+    
     <footer>
         <p>Contacto: </p>
     </footer>

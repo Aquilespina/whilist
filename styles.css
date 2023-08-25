@@ -5,6 +5,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(#E8B9C7,#AFBDB9);
 }
 
 header {
@@ -19,8 +20,11 @@ section {
     padding: 0 1rem;
 }
 
-h1, h2 {
+h1 {
     text-align: center;
+}
+h2,p{
+    padding-left: 10px;
 }
 
 ul {
@@ -58,6 +62,7 @@ ul {
 
 .select-button:hover {
     background-color: #555;
+    border:20px;
 }
 
 /* Estilos de productos seleccionados */
@@ -76,4 +81,21 @@ footer {
     padding: 1rem 0;
     background-color: #333;
     color: white;
+}
+
+
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 400px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+label {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+
 }
