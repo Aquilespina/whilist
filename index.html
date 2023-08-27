@@ -28,7 +28,8 @@
             <p>Selecciona el/los productos que deseas llevar para este festejo, te recordamos llenar el formulario que se encuentra en la parte de abajo de  la pagina </p> 
                 <div class="product">
                     <img src="img/producto1.jpg" alt="Producto 1">
-                        <button class="select-button" data-product="Producto 1">Seleccionar</button>
+                        <button   class="select-button" data-product="Producto 1">Seleccionar</button>
+                       
                 </div>
                 <div class="product">
                     <img src="img/producto2.jpg" alt="Producto 2">
@@ -38,40 +39,37 @@
                     <img src="img/producto3.jpg" alt="Producto 3">
                      <button class="select-button" data-product="Producto 3">Seleccionar</button>
                 </div>
-        
-                <div class="product">
+                 <div class="product">
                     <img src="img/producto4.jpg" alt="Producto 4">
                         <button class="select-button" data-product="Producto 4">Seleccionar</button>
                 </div>
-        <div class="product">
-            <img src="img/producto5.jpg" alt="Producto 5">
-            <button class="select-button" data-product="Producto 5">Seleccionar</button>
-        </div>
-        <div class="product">
-            <img src="img/producto6.jpg" alt="Producto 6">
-            <button class="select-button" data-product="Producto 6">Seleccionar</button>
-        </div>
+                 <div class="product">
+                     <img src="img/producto5.jpg" alt="Producto 5">
+                         <button class="select-button" data-product="Producto 5">Seleccionar</button>
+                </div>
+                <div class="product">
+                     <img src="img/producto6.jpg" alt="Producto 6">
+                        <button class="select-button" data-product="Producto 6">Seleccionar</button>
+                 </div>
         <!-- Agregar más productos aquí -->
-    </section>
-    
- 
-    <section class="selected-products">
-             <form method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required><br><br> 
+ </section>
+<section class="selected-products">
+     <form method="POST">
+        <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br> 
                 <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required><br><br>
+            <input type="text" id="apellido" name="apellido" required><br><br>
                 <label for="correo">Correo Electrónico:</label>
-                <input type="email" id="correo" name="correo" required><br>
-                <ul id="selected-products-list">
-                    <!-- Aquí se mostrarán los productos seleccionados -->
-                </ul>
-              
+            <input type="email" id="correo" name="correo" required><br>
+        <ul id="selected-products-list">
+         <!-- Aquí se mostrarán los productos seleccionados -->
+         </ul>   
          <button  class="confirm-button">Confirmar Envío</button>
-        </form>
-    </section>
-    <footer>
-        <p>Dudas o comentarios recueda enviar un mensaje a ...</p>
+    </form>
+</section>
+<div id="contador">0</div>
+<footer>
+  <p>Dudas o comentarios recueda enviar un mensaje a ...</p>
     </footer>
 
     <script src="script.js"></script>

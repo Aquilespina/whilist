@@ -24,15 +24,3 @@ function updateSelectedProductsList() {
         selectedProductsList.appendChild(li);
     });
 }
-
-var contador = 0;
-
-  function actualizarContador() {
-    document.getElementById("contador").textContent = contador;
-  }
-
-  function incrementarb1() {
-    contador++;
-    actualizarContador();
-  }
-
