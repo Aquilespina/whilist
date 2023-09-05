@@ -35,4 +35,3 @@ var contador = 0;
     contador++;
     actualizarContador();
   }
-

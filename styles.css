@@ -10,12 +10,15 @@ header .contenedor{
     justify-content: space-between;
   }
 header {
-    background: linear-gradient(rgba(246, 246, 246, 0.44), rgba(238, 131, 217, 0.6)), url(img/fondo.jpg);
+    background: linear-gradient(rgba(246, 246, 246, 0.45),#ff800078), url(img/fondo.jpg);
     height: 50vh;
     background-size: cover;
 }
 header .Lista-opc{
     display: flex;
+    margin: 16px 15px;
+	padding: 10px 10px;
+    
     }
 
 #contenedor-flex{
@@ -90,7 +93,7 @@ ul {
         color: rgba(255,255,255,0.9);
         -o-text-overflow: clip;
         text-overflow: clip;
-        background: rgba(119,0,255,0.66);
+        background:#ff8000;
         -webkit-box-shadow: 7px 2px 2px 0 rgba(0,0,0,0.2) ;
         box-shadow: 7px 2px 2px 0 rgba(0,0,0,0.2) ;
   
@@ -111,9 +114,43 @@ ul {
     border-radius: 50%;
 }
 .select-button:hover {
-    background-color: #555;
+    background-color: #475016;
 
 }
+/* Estilos de cuenta regresiva */
+ #cuenta{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+ }
+/*generates a style for the id features orange colors */
+      
+.simply-section{
+    background-color: #f2b77d6e;
+    width: 100px;
+    height: 100px;
+    margin: 0 25px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.simply-amount{
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.simply-word{
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+
+
 
 /* Estilos de productos seleccionados */
 .selected-products {
@@ -167,7 +204,7 @@ label {
     color: rgba(255,255,255,0.9);
     -o-text-overflow: clip;
     text-overflow: clip;
-    background: rgba(119,0,255,0.66);
+    background:#ff8000;
     -webkit-box-shadow: 7px 2px 2px 0 rgba(0,0,0,0.2) ;
     box-shadow: 7px 2px 2px 0 rgba(0,0,0,0.2) ;
 
@@ -197,7 +234,7 @@ label {
         text-align: center;
         -o-text-overflow: ellipsis;
         text-overflow: ellipsis;
-        background: #d40afc;
+        background:#3F2212;
         -webkit-box-shadow: 6px 1px 1px 0 rgba(0,0,0,0.3) ;
         box-shadow: 6px 1px 1px 0 rgba(0,0,0,0.3) ;
         text-shadow: 2px 1px 1px rgba(0,0,0,0.2) ;
