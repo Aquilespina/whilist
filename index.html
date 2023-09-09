@@ -6,6 +6,7 @@
     <title>Boda </title>
     <link  rel="icon" href="boda.png"
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -66,7 +67,7 @@
 
  </section>
 <section class="selected-products">
-     <form method="POST">
+     <form >
         <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" ><br><br> 
                 <label for="apellido">Apellido:</label>
@@ -76,7 +77,7 @@
         <ul id="selected-products-list">
          <!-- Aquí se mostrarán los productos seleccionados -->
          </ul>   
-         <button  class="confirm-button">Confirmar Envío</button>
+         <button  onclick="procesar()" class="confirm-button">Confirmar Envío</button>
     </form>
 </section>
 <div id="contador">0</div>
