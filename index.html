@@ -36,57 +36,74 @@
             <p>Selecciona el/los productos que deseas llevar para este festejo, te recordamos llenar el formulario que se encuentra en la parte de abajo de  la pagina </p> 
                 <div class="product">
                     <img src="img/producto1.jpg" alt="Producto 1">
-                        <button   class="select-button" data-product="Producto 1">Seleccionar</button>
-                       
+                    <button   class="menos" >-</button> 
+                    <input  type="text"  class="contador" value="0" size="20">
+                    <button   class="mas" >+</button> 
+                    <button   class="select-button" id="seleccionar">Seleccionar</button>
+                      
+                    
                 </div>
                 <div class="product">
                     <img src="img/producto2.jpg" alt="Producto 2">
+                    <button  class="menos"  type="button">-</button> 
+                    <input  type="text"  class="contador"value="0">
+                    <button  class="mas"  type="button">+</button> 
                         <button class="select-button" data-product="Producto 2">Seleccionar</button>
                 </div>
                 <div class="product">
                     <img src="img/producto3.jpg" alt="Producto 3">
+                    <button  class="menos"  type="button">-</button> 
+                    <input  type="text"  class="contador"value="0">
+                    <button  class="mas"  type="button">+</button>  
                      <button class="select-button" data-product="Producto 3">Seleccionar</button>
                 </div>
                  <div class="product">
                     <img src="img/producto4.jpg" alt="Producto 4">
+                    <button  class="menos"  type="button">-</button> 
+                    <input  type="text"  class="contador"value="0">
+                    <button  class="mas"  type="button">+</button> 
                         <button class="select-button" data-product="Producto 4">Seleccionar</button>
                 </div>
                  <div class="product">
                      <img src="img/producto5.jpg" alt="Producto 5">
+                     <button  class="menos"  type="button">-</button> 
+                     <input  type="text"  class="contador" size="20">
+                     <button  class="mas"  type="button">+</button> 
                          <button class="select-button" data-product="Producto 5">Seleccionar</button>
                 </div>
                 <div class="product">
                      <img src="img/producto6.jpg" alt="Producto 6">
+                     <button  class="menos"  type="button">-</button> 
+                     <input  type="text"  class="contador"value="0">
+                     <button  class="mas"  type="button">+</button>  
                         <button class="select-button" data-product="Producto 6">Seleccionar</button>
                  </div>
         <!-- Agregar más productos aquí -->
- </section>
- 
- 
-
-
- </section>
+    </section>
+</section>
 <section class="selected-products">
-     <form >
+     <form id="formulario">
         <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" ><br><br> 
                 <label for="apellido">Apellido:</label>
             <input type="text" id="apellido" name="apellido" ><br><br>
                 <label for="correo">Correo Electrónico:</label>
             <input type="email" id="correo" name="correo" ><br>
-        <ul id="selected-products-list">
-         <!-- Aquí se mostrarán los productos seleccionados -->
-         </ul>   
-         <button  onclick="procesar()" class="confirm-button">Confirmar Envío</button>
-    </form>
+            <label for="valor1">Valor 1:</label>
+            <input type="text" id="valor1" name="valor1"><br><br>
+            <label for="valor2">Valor 2:</label>
+            <input type="text" id="valor2" name="valor2"><br><br>
+        
+            <input type="submit" value="Enviar">
 </section>
 <div id="contador">0</div>
 <footer>
   <p>Dudas o comentarios recueda enviar un mensaje a ...</p>
     </footer>
-
     <script src="script.js"></script>
     <script src="simplyCountdown.min.js"></script>
     <script src="cuenta.js"></script>
+    <script src="s.js"></script>
 </body>
+
 </html>

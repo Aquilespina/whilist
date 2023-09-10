@@ -82,6 +82,7 @@ ul {
 }
 
 .select-button {
+
         -webkit-box-sizing: content-box;
         -moz-box-sizing: content-box;
         box-sizing: content-box;
@@ -148,7 +149,48 @@ ul {
     font-size: 20px;
 }
 
+.menos{
+    margin: 0.5rem 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    color: rgba(255,255,255,0.9);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background:#ff8000;
+    margin-top: 5px;
 
+    
+}
+.menos:hover{
+    background-color:#005aff;
+}
+
+
+.mas{
+    margin: 0.5rem 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    color: rgba(255,255,255,0.9);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background:#ff8000;
+    
+
+}
+.contador{
+    width: 50px;
+}
+.mas:hover{
+    background-color:#005aff;
+}
 
 
 
@@ -165,6 +207,7 @@ ul {
 .selected-products li {
     margin: 0.5rem 0;
 }
+
 
 /* Estilos de pie de página */
 footer {
@@ -190,6 +233,8 @@ label {
     padding: 5px;
 
 }
+
+
 
 .confirm-button{
     -webkit-box-sizing: content-box;
