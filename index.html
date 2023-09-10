@@ -39,7 +39,7 @@
                     <button   class="menos" >-</button> 
                     <input  type="text"  class="contador" value="0" size="20">
                     <button   class="mas" >+</button> 
-                    <button   class="select-button" id="seleccionar">Seleccionar</button>
+                    <button   class="select-button" id="seleccionar1">Seleccionar</button>
                       
                     
                 </div>
@@ -82,20 +82,20 @@
     </section>
 </section>
 <section class="selected-products">
-     <form id="formulario">
+    <div id="infoSeleccion"></div> <!-- Información sobre la selección -->
+
+    <form id="formulario" style="display: none;">
         <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" ><br><br> 
-                <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" ><br><br>
-                <label for="correo">Correo Electrónico:</label>
-            <input type="email" id="correo" name="correo" ><br>
-            <label for="valor1">Valor 1:</label>
-            <input type="text" id="valor1" name="valor1"><br><br>
-            <label for="valor2">Valor 2:</label>
-            <input type="text" id="valor2" name="valor2"><br><br>
+        <input type="text" id="nombre" name="nombre" required><br><br> <!-- Campo para el nombre (requerido) -->
         
-            <input type="submit" value="Enviar">
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br> <!-- Campo para el correo electrónico (requerido) -->
+        
+        <!-- Botón para enviar el formulario -->
+        <input type="submit" value="Enviar">
+    </form>
 </section>
+
 <div id="contador">0</div>
 <footer>
   <p>Dudas o comentarios recueda enviar un mensaje a ...</p>

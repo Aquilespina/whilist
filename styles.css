@@ -208,7 +208,11 @@ ul {
     margin: 0.5rem 0;
 }
 
-
+#infoSeleccion {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
 /* Estilos de pie de página */
 footer {
     text-align: center;

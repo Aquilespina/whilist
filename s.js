@@ -1,13 +1,13 @@
-
 // JavaScript
 var contadores = document.querySelectorAll(".contador");
 var sumadores = document.querySelectorAll(".mas");
 var restadores = document.querySelectorAll(".menos");
-var seleccionarBoton = document.getElementById("seleccionar");
+var selectButtons = document.querySelectorAll(".select-button");
 var formulario = document.getElementById("formulario");
-var valor1Input = document.getElementById("valor1");
-var valor2Input = document.getElementById("valor2");
-
+var infoSeleccion = document.getElementById("infoSeleccion");
+var nombreInput = document.getElementById("nombre");
+var correoInput = document.getElementById("correo");
+var productosSeleccionados = {};
 var prevValues = [];
 
 function calcular(index) {
@@ -20,10 +20,70 @@ function calcular(index) {
     }
 }
 
-seleccionarBoton.addEventListener("click", function() {
-    valor1Input.value = contadores[0].value;
-    valor2Input.value = contadores[1].value;
-    // Agrega más asignaciones de valores a campos del formulario según sea necesario
+function agregarProducto(numero, valor) {
+    if (productosSeleccionados.hasOwnProperty(numero)) {
+        productosSeleccionados[numero].valor = valor;
+    } else {
+        productosSeleccionados[numero] = { valor: valor };
+        mostrarInfoSeleccion(numero, valor);
+    }
+    actualizarFormulario();
+}
+
+function mostrarInfoSeleccion(numero, valor) {
+    var infoDiv = document.createElement("div");
+
+    infoSeleccion.appendChild(infoDiv);
+}
+
+function actualizarFormulario() {
+    formulario.style.display = "block"; // Mostrar el formulario después de seleccionar productos
+    nombreInput.focus(); // Colocar el foco en el campo de nombre
+
+    // Limpia el formulario
+    formulario.innerHTML = "";
+    // Agrega campos para los productos seleccionados
+    for (var numero in productosSeleccionados) {
+        var producto = productosSeleccionados[numero];
+
+        // Agrega la información del producto
+        var infoDiv = document.createElement("div");
+        infoDiv.textContent = "Producto " + numero + ": "  ;
+        formulario.appendChild(infoDiv);
+
+        // Agrega el valor del producto
+        var nuevoCampo = document.createElement("input");
+        nuevoCampo.type = "text";
+        nuevoCampo.value = producto.valor;
+        nuevoCampo.readOnly = true;
+        formulario.appendChild(nuevoCampo);
+
+    }
+
+    // Agrega campos para el nombre y el correo electrónico
+    formulario.appendChild(document.createElement("br"));
+    formulario.appendChild(document.createTextNode("Nombre: "));
+    formulario.appendChild(nombreInput);
+    formulario.appendChild(document.createElement("br"));
+    formulario.appendChild(document.createTextNode("Correo Electrónico: "));
+    formulario.appendChild(correoInput);
+    formulario.appendChild(document.createElement("br"));
+    formulario.appendChild(document.createElement("br"));
+
+    // Botón para enviar el formulario
+    var enviarButton = document.createElement("input");
+    enviarButton.type = "submit";
+    enviarButton.value = "Enviar";
+    formulario.appendChild(enviarButton);
+}
+
+selectButtons.forEach(function(button, index) {
+    button.addEventListener("click", function() {
+        var valor = contadores[index].value;
+        if (valor !== "") {
+            agregarProducto(index + 1, valor);
+        }
+    });
 });
 
 for (var i = 0; i < sumadores.length; i++) {
@@ -56,3 +116,4 @@ for (var i = 0; i < contadores.length; i++) {
         calcular(index);
     });
 }
+
