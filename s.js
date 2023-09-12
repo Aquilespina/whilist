@@ -21,16 +21,20 @@ function calcular(index) {
 }
 
 function agregarProducto(numero, valor) {
+    var botonSeleccionado = selectButtons[numero - 1];
+    var nombreProducto = botonSeleccionado.getAttribute("data-product");
+    
     if (productosSeleccionados.hasOwnProperty(numero)) {
         productosSeleccionados[numero].valor = valor;
     } else {
-        productosSeleccionados[numero] = { valor: valor };
-        mostrarInfoSeleccion(numero, valor);
+        productosSeleccionados[numero] = { nombre: nombreProducto, valor: valor };
+        mostrarInfoSeleccion(numero, valor, nombreProducto);
     }
     actualizarFormulario();
 }
 
-function mostrarInfoSeleccion(numero, valor) {
+
+function mostrarInfoSeleccion(numero, valor, nombreProducto) {
     var infoDiv = document.createElement("div");
 
     infoSeleccion.appendChild(infoDiv);
@@ -42,13 +46,14 @@ function actualizarFormulario() {
 
     // Limpia el formulario
     formulario.innerHTML = "";
+
     // Agrega campos para los productos seleccionados
     for (var numero in productosSeleccionados) {
         var producto = productosSeleccionados[numero];
 
         // Agrega la información del producto
         var infoDiv = document.createElement("div");
-        infoDiv.textContent = "Producto " + numero + ": "  ;
+        infoDiv.textContent =  producto.nombre ;
         formulario.appendChild(infoDiv);
 
         // Agrega el valor del producto
@@ -57,7 +62,6 @@ function actualizarFormulario() {
         nuevoCampo.value = producto.valor;
         nuevoCampo.readOnly = true;
         formulario.appendChild(nuevoCampo);
-
     }
 
     // Agrega campos para el nombre y el correo electrónico

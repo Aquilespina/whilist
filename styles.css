@@ -87,7 +87,7 @@ ul {
 }
 
 .product img {
-    max-width: 100%;
+    max-width: 200%;
     height: auto;
     border: 1px solid #ccc;
 }
@@ -152,18 +152,20 @@ ul {
 .menos,
 .mas {
     margin: 0.5rem 0;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
+
     cursor: pointer;
     padding: 5px 10px;
     border: none;
     color: rgba(255, 255, 255, 0.9);
-    -o-text-overflow: clip;
-    text-overflow: clip;
+  
     background: #ff8000;
-    margin-top: 5px;
+    
+
 }
+.menos{
+  margin-left: 75px;
+}
+
 
 .menos:hover,
 .mas:hover {
