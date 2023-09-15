@@ -2,9 +2,9 @@
 
 
 $server = 'localhost';
-    $user = 'id20876833_root';
-    $pass = 'Aquiles07$';
-    $db = 'id20876833_bdlpd';
+    $user = 'root';
+    $pass = '';
+    $db = 'nat';
     $conexion = mysqli_connect($server, $user, $pass, $db);
 /*
 

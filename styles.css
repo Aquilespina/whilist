@@ -281,3 +281,16 @@ form input[type="submit"]:hover {
     background-color: #f39656; /* Naranja pastel más oscuro al pasar el mouse */
     color: white;
 }
+/* Estilo para el footer */
+footer {
+    background-color: #ffcccc;
+    text-align: center;
+  
+    width: 100%;
+}
+
+footer p {
+    color: #333;
+    font-size: 14px;
+    margin: 0;
+}
