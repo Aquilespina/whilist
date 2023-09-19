@@ -12,7 +12,7 @@ var prevValues = [];
 
 function calcular(index) {
     var value = contadores[index].value;
-    var isValid = /^[1-9][0-9]*$/.test(value);
+    var isValid = /^[0-9][0-9]*$/.test(value);
     if (!isValid) {
         contadores[index].value = prevValues[index];
     } else {

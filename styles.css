@@ -7,7 +7,7 @@ body {
 .contenedor {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 7px;
 }
 
 header {
@@ -25,7 +25,16 @@ h2{
 header .contenedor {
     display: flex;
     justify-content: space-between;
+    
 }
+.contenedor p{
+    margin-top: 10px;
+}
+.textonovios p{
+    color: #fff;
+ 
+}
+
 
 header .Lista-opc {
     display: flex;
@@ -45,11 +54,11 @@ header .Lista-opc {
 }
 
 h1 {
-    text-align: center;
+    text-align:center;
     margin: 0%;
     font-size: 60px;
     color: #FFF;
-    margin: 0;
+  
 }
 
 header ul li {
