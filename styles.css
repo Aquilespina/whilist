@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background: linear-gradient(rgba(246, 246, 246, 0.45), #ff800078), url(img/fondo.jpg);
+    background: linear-gradient(rgba(246, 246, 246, 0.743), #ff8000dc), url(img/fondo.jpg);
     height: 80vh;
     background-size: cover;
 }
@@ -59,7 +59,7 @@ header .Lista-opc {
 h1 {
     text-align:center;
     margin: 0%;
-    font-size: 60px;
+    font-size: 65px;
     color: #FFF;
   
 }
@@ -72,7 +72,7 @@ header ul li {
 
 h2, p {
   
-    font-size: 22px;
+    font-size: 20px;
     padding-left: 10px;
 
 }
