@@ -218,13 +218,13 @@ ul {
 /* Estilos para el formulario y botón de confirmación */
 form {
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 40px;
     width: 400px;
     align-items: center;
     text-align: center;
     background: #ffedda; /* Naranja pastel */
     border-radius: 15px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    box-shadow:20px 20px 10px rgba(0, 0, 0, 0.2);
 }
 
 label {
@@ -266,8 +266,7 @@ label {
 form #correo,form #numero, form #nombre {
     width: 90%;
     padding: 10px;
-    font-size: 16px;
-    margin-bottom: 10px;
+
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -296,18 +295,19 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: #f39656; /* Naranja pastel más oscuro al pasar el mouse */
     color: white;
+    
 }
 /* Estilo para el footer */
 footer {
     background-color: #ffcccc;
     text-align: center;
    font-size: 13px;
-    width: 100%;
+    
 }
 
 
 footer p {
     color: #333;
-    font-size: 14px;
+  
     margin: 0;
 }

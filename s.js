@@ -65,6 +65,7 @@ function actualizarFormulario() {
     }
 
     // Agrega campos para el nombre y el correo electrónico
+
     formulario.appendChild(document.createElement("br"));
     formulario.appendChild(document.createTextNode("Nombre: "));
     formulario.appendChild(nombreInput);
@@ -72,7 +73,7 @@ function actualizarFormulario() {
     formulario.appendChild(document.createTextNode("Correo Electrónico: "));
     formulario.appendChild(correoInput);
     formulario.appendChild(document.createTextNode("Numero celular: "));
-    formulario.appendChild(numeroInput);
+    formulario.appendChild(numeroCelularInput);
     
     formulario.appendChild(document.createElement("br"));
 
