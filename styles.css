@@ -12,7 +12,7 @@ body {
 
 header {
     background: linear-gradient(rgba(246, 246, 246, 0.45), #ff800078), url(img/fondo.jpg);
-    height: 76vh;
+    height: 80vh;
     background-size: cover;
 }
 h4{
@@ -48,9 +48,9 @@ header .Lista-opc {
 #contenedor-flex {
     display: flex;
     justify-content: center;
-    margin-top: 5vh;
+    margin-top: 0vh;
     margin-right: 0px;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     margin-left: 0px;
     max-width: 1280px;
     width: 100%;
@@ -72,7 +72,7 @@ header ul li {
 
 h2, p {
   
-
+    font-size: 22px;
     padding-left: 10px;
 
 }
