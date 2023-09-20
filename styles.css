@@ -1,18 +1,18 @@
 /* Estilos generales */
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Kalam', cursive;
     margin: 0;
 }
 
 .contenedor {
     max-width: 1200px;
-    margin: 0 auto;
+    
     padding: 7px;
 }
 
 header {
     background: linear-gradient(rgba(246, 246, 246, 0.45), #ff800078), url(img/fondo.jpg);
-    height: 50vh;
+    height: 76vh;
     background-size: cover;
 }
 h4{
@@ -23,6 +23,8 @@ h2{
  }
 
 header .contenedor {
+
+    font-family: 'Kalam', cursive;
     display: flex;
     justify-content: space-between;
     
@@ -37,6 +39,7 @@ header .contenedor {
 
 
 header .Lista-opc {
+   
     display: flex;
     margin: 16px 15px;
     padding: 10px 10px;
@@ -45,9 +48,9 @@ header .Lista-opc {
 #contenedor-flex {
     display: flex;
     justify-content: center;
-    margin-top: 18vh;
+    margin-top: 5vh;
     margin-right: 0px;
-    margin-bottom: 18vh;
+    margin-bottom: 10vh;
     margin-left: 0px;
     max-width: 1280px;
     width: 100%;
@@ -68,9 +71,13 @@ header ul li {
 }
 
 h2, p {
+  
 
     padding-left: 10px;
 
+}
+.textoarticulos p{
+    color: #FFF;
 }
 
 a {
