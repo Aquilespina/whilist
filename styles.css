@@ -262,9 +262,9 @@ label {
 }
 
 /* Estilos para los campos de nombre y correo electrónico */
-form #nombre,
-form #correo {
-    width: 100%;
+
+form #correo,form #numero, form #nombre {
+    width: 90%;
     padding: 10px;
     font-size: 16px;
     margin-bottom: 10px;
@@ -282,7 +282,7 @@ form input[type="submit"] {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border-radius: 27px;
     -webkit-box-shadow: 7px 2px 2px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 7px 2px 2px 0 rgba(0, 0, 0, 0.2);
@@ -301,9 +301,10 @@ form input[type="submit"]:hover {
 footer {
     background-color: #ffcccc;
     text-align: center;
-  
+   font-size: 13px;
     width: 100%;
 }
+
 
 footer p {
     color: #333;

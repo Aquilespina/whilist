@@ -71,7 +71,9 @@ function actualizarFormulario() {
     formulario.appendChild(document.createElement("br"));
     formulario.appendChild(document.createTextNode("Correo Electrónico: "));
     formulario.appendChild(correoInput);
-    formulario.appendChild(document.createElement("br"));
+    formulario.appendChild(document.createTextNode("Numero celular: "));
+    formulario.appendChild(numeroInput);
+    
     formulario.appendChild(document.createElement("br"));
 
     // Botón para enviar el formulario
