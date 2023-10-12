@@ -1,4 +1,4 @@
-// JavaScript
+// Seleccionar elementos del DOM y almacenarlos en variables
 var contadores = document.querySelectorAll(".contador");
 var sumadores = document.querySelectorAll(".mas");
 var restadores = document.querySelectorAll(".menos");
@@ -10,6 +10,7 @@ var correoInput = document.getElementById("correo");
 var productosSeleccionados = {};
 var prevValues = [];
 
+// Función para validar y calcular valores en los contadores
 function calcular(index) {
     var value = contadores[index].value;
     var isValid = /^[0-9][0-9]*$/.test(value);
@@ -20,6 +21,7 @@ function calcular(index) {
     }
 }
 
+// Función para agregar un producto a la lista de productos seleccionados
 function agregarProducto(numero, valor) {
     var botonSeleccionado = selectButtons[numero - 1];
     var nombreProducto = botonSeleccionado.getAttribute("data-product");
@@ -33,13 +35,13 @@ function agregarProducto(numero, valor) {
     actualizarFormulario();
 }
 
-
+// Función para mostrar información de selección
 function mostrarInfoSeleccion(numero, valor, nombreProducto) {
     var infoDiv = document.createElement("div");
-
     infoSeleccion.appendChild(infoDiv);
 }
 
+// Función para actualizar el formulario con productos seleccionados
 function actualizarFormulario() {
     formulario.style.display = "block"; // Mostrar el formulario después de seleccionar productos
     nombreInput.focus(); // Colocar el foco en el campo de nombre
@@ -75,7 +77,7 @@ function actualizarFormulario() {
     
     formulario.appendChild(document.createElement("br"));
     formulario.appendChild(document.createTextNode("Numero celular: "));
-    formulario.appendChild(numeroCelularInput);
+    formulario.appendChild(numeroCelularInput); // Corregir: No se define 'numeroCelularInput'
     
     formulario.appendChild(document.createElement("br"));
 
@@ -86,6 +88,7 @@ function actualizarFormulario() {
     formulario.appendChild(enviarButton);
 }
 
+// Agregar controladores de eventos a los botones de selección
 selectButtons.forEach(function(button, index) {
     button.addEventListener("click", function() {
         var valor = contadores[index].value;
@@ -95,6 +98,7 @@ selectButtons.forEach(function(button, index) {
     });
 });
 
+// Agregar controladores de eventos a los botones de suma
 for (var i = 0; i < sumadores.length; i++) {
     sumadores[i].addEventListener("click", function(event) {
         var index = Array.from(sumadores).indexOf(event.target);
@@ -103,6 +107,7 @@ for (var i = 0; i < sumadores.length; i++) {
     });
 }
 
+// Agregar controladores de eventos a los botones de resta
 for (var i = 0; i < restadores.length; i++) {
     restadores[i].addEventListener("click", function(event) {
         var index = Array.from(restadores).indexOf(event.target);
@@ -111,6 +116,7 @@ for (var i = 0; i < restadores.length; i++) {
     });
 }
 
+// Agregar controladores de eventos a los contadores para cambios y teclas presionadas
 for (var i = 0; i < contadores.length; i++) {
     contadores[i].addEventListener("change", function(event) {
         var index = Array.from(contadores).indexOf(event.target);
