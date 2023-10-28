@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const contadores = document.querySelectorAll(".contador");
 const sumadores = document.querySelectorAll(".mas");
 const restadores = document.querySelectorAll(".menos");
@@ -10,7 +11,21 @@ const numeroCelularInput = document.getElementById("numeroCelular");
 const nombreProductoInput = document.getElementById("nombreProducto"); // Agregado un input para el nombre del producto
 const productosSeleccionados = {};
 const prevValues = [];
+=======
+// Seleccionar elementos del DOM y almacenarlos en variables
+var contadores = document.querySelectorAll(".contador");
+var sumadores = document.querySelectorAll(".mas");
+var restadores = document.querySelectorAll(".menos");
+var selectButtons = document.querySelectorAll(".select-button");
+var formulario = document.getElementById("formulario");
+var infoSeleccion = document.getElementById("infoSeleccion");
+var nombreInput = document.getElementById("nombre");
+var correoInput = document.getElementById("correo");
+var productosSeleccionados = {};
+var prevValues = [];
+>>>>>>> 753124a511db699726fe872a42a496abe2955034
 
+// Función para validar y calcular valores en los contadores
 function calcular(index) {
     const value = contadores[index].value;
     const isValid = /^[0-9][0-9]*$/.test(value);
@@ -21,7 +36,15 @@ function calcular(index) {
     }
 }
 
+<<<<<<< HEAD
 function agregarProducto(numero, valor, nombreProducto) {
+=======
+// Función para agregar un producto a la lista de productos seleccionados
+function agregarProducto(numero, valor) {
+    var botonSeleccionado = selectButtons[numero - 1];
+    var nombreProducto = botonSeleccionado.getAttribute("data-product");
+    
+>>>>>>> 753124a511db699726fe872a42a496abe2955034
     if (productosSeleccionados.hasOwnProperty(numero)) {
         productosSeleccionados[numero].valor = valor;
     } else {
@@ -33,12 +56,19 @@ function agregarProducto(numero, valor, nombreProducto) {
     actualizarFormulario();
 }
 
+<<<<<<< HEAD
 function mostrarInfoSeleccion(numero, valor, nombreProducto) {
     const infoDiv = document.createElement("div");
 
+=======
+// Función para mostrar información de selección
+function mostrarInfoSeleccion(numero, valor, nombreProducto) {
+    var infoDiv = document.createElement("div");
+>>>>>>> 753124a511db699726fe872a42a496abe2955034
     infoSeleccion.appendChild(infoDiv);
 }
 
+// Función para actualizar el formulario con productos seleccionados
 function actualizarFormulario() {
     formulario.style.display = "block";
     nombreInput.focus();
@@ -63,7 +93,13 @@ function actualizarFormulario() {
 
     formulario.appendChild(br);
     formulario.appendChild(document.createTextNode("Numero celular: "));
+<<<<<<< HEAD
     formulario.appendChild(numeroCelularInput);
+=======
+    formulario.appendChild(numeroCelularInput); // Corregir: No se define 'numeroCelularInput'
+    
+    formulario.appendChild(document.createElement("br"));
+>>>>>>> 753124a511db699726fe872a42a496abe2955034
 
 
     const listaProductosDiv = document.createElement("div");
@@ -85,9 +121,16 @@ function actualizarFormulario() {
     formulario.appendChild(enviarButton);
 }
 
+<<<<<<< HEAD
 selectButtons.forEach((button, index) => {
     button.addEventListener("click", () => {
         const valor = contadores[index].value;
+=======
+// Agregar controladores de eventos a los botones de selección
+selectButtons.forEach(function(button, index) {
+    button.addEventListener("click", function() {
+        var valor = contadores[index].value;
+>>>>>>> 753124a511db699726fe872a42a496abe2955034
         if (valor !== "") {
             const botonSeleccionado = selectButtons[index];
             const nombreProducto = botonSeleccionado.getAttribute("data-product");
@@ -96,22 +139,47 @@ selectButtons.forEach((button, index) => {
     });
 });
 
+<<<<<<< HEAD
 sumadores.forEach((sumador, index) => {
     sumador.addEventListener("click", () => {
         contadores[index].value = String(Number(contadores[index].value) + 1);
+=======
+// Agregar controladores de eventos a los botones de suma
+for (var i = 0; i < sumadores.length; i++) {
+    sumadores[i].addEventListener("click", function(event) {
+        var index = Array.from(sumadores).indexOf(event.target);
+        contadores[index].value = Number(contadores[index].value) + 1;
+>>>>>>> 753124a511db699726fe872a42a496abe2955034
         calcular(index);
     });
 });
 
+<<<<<<< HEAD
 restadores.forEach((restador, index) => {
     restador.addEventListener("click", () => {
         contadores[index].value = String(Number(contadores[index].value) - 1);
+=======
+// Agregar controladores de eventos a los botones de resta
+for (var i = 0; i < restadores.length; i++) {
+    restadores[i].addEventListener("click", function(event) {
+        var index = Array.from(restadores).indexOf(event.target);
+        contadores[index].value = Number(contadores[index].value) - 1;
+>>>>>>> 753124a511db699726fe872a42a496abe2955034
         calcular(index);
     });
 });
 
+<<<<<<< HEAD
 contadores.forEach((contador, index) => {
     contador.addEventListener("change", () => calcular(index));
+=======
+// Agregar controladores de eventos a los contadores para cambios y teclas presionadas
+for (var i = 0; i < contadores.length; i++) {
+    contadores[i].addEventListener("change", function(event) {
+        var index = Array.from(contadores).indexOf(event.target);
+        calcular(index);
+    });
+>>>>>>> 753124a511db699726fe872a42a496abe2955034
 
     contador.addEventListener("keyup", (event) => {
         if (contadores[index].value === "") {
