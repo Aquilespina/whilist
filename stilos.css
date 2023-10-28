@@ -3,77 +3,62 @@ body {
     font-family: 'Kalam', cursive;
     margin: 0;
 }
-
-.contenedor {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 7px;
-}
-
-.Lista-opc {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.Lista-opc li {
+/* Estilos generales */
+body {
+    font-family: 'Kalam', cursive;
+    background-color: #f0f0f0;
     margin: 0;
-    padding: 15px;
+    padding: 0;
 }
 
-.contenedor-titulo {
-    text-align: center;
-}
-
-.textonovios {
-    margin: 20px;
-}
-
-.textoarticulos {
-    margin: 20px;
-}
-
-/* Media queries para ajustar estilos en pantallas más pequeñas */
-@media (max-width: 768px) {
-    .Lista-opc {
-        flex-direction: column;
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    /* Ajusta el tamaño de la fuente, los márgenes, el espaciado, etc. según sea necesario para pantallas pequeñas */
+    h1 {
+        font-size: 24px;
     }
-
-    .Lista-opc li {
-        padding: 10px;
+    p {
+        font-size: 16px;
+    }
+    
+    /* Mueve el elemento con id="cuenta" más abajo */
+    #cuenta {
+        position: relative;
+        top: 20px; /* Ajusta la cantidad de desplazamiento hacia abajo que desees */
     }
 }
 
-/* Estilos para el encabezado (header) */
+
 header {
     background: linear-gradient(rgba(246, 246, 246, 0.743), #ff8000dc), url(img/fondo.jpg);
+    height: 80vh;
     background-size: cover;
 }
-
-h4 {
-    color: #ff8000;
+h4{
+   color: #ff8000; 
 }
-
-h2 {
-    color: #ff8000;
-}
+h2{
+    color: #ff8000; 
+ }
 
 header .contenedor {
+
     font-family: 'Kalam', cursive;
     display: flex;
     justify-content: space-between;
+    
 }
-
-.contenedor p {
+.contenedor p{
     margin-top: 10px;
 }
-
-.textonovios p {
+.textonovios p{
     color: #fff;
+ 
 }
 
+
 header .Lista-opc {
+   
     display: flex;
     margin: 16px 15px;
     padding: 10px 10px;
@@ -91,10 +76,11 @@ header .Lista-opc {
 }
 
 h1 {
-    text-align: center;
+    text-align:center;
     margin: 0%;
     font-size: 65px;
     color: #FFF;
+  
 }
 
 header ul li {
@@ -103,13 +89,13 @@ header ul li {
     font-family: "Poppins", sans-serif;
 }
 
-h2,
-p {
+h2, p {
+  
     font-size: 20px;
     padding-left: 10px;
-}
 
-.textoarticulos p {
+}
+.textoarticulos p{
     color: #FFF;
 }
 
@@ -121,6 +107,7 @@ nav ul li a {
     color: #fff;
     text-align: right;
     padding-right: 20px;
+    
 }
 
 ul {
@@ -210,16 +197,20 @@ ul {
 .menos,
 .mas {
     margin: 0.5rem 0;
+
     cursor: pointer;
     padding: 5px 10px;
     border: none;
     color: rgba(255, 255, 255, 0.9);
+  
     background: #ff8000;
+    
+
+}
+.menos{
+  margin-left: 70px;
 }
 
-.menos {
-    margin-left: 70px;
-}
 
 .menos:hover,
 .mas:hover {
@@ -247,18 +238,18 @@ ul {
 form {
     border: 1px solid #ccc;
     padding: 40px;
-    width: 90%; /* Ajusta el ancho del formulario para que sea responsive */
+    width: 400px;
     align-items: center;
     text-align: center;
     background: #ffedda; /* Naranja pastel */
     border-radius: 15px;
-    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.2);
+    box-shadow:20px 20px 10px rgba(0, 0, 0, 0.2);
 }
 
 label {
     background-color: #ff8000;
     color: white;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
 }
 
@@ -290,15 +281,22 @@ label {
 }
 
 /* Estilos para los campos de nombre y correo electrónico */
-form #correo,
-form #numero,
-form #nombre {
-    width: 90%;
+
+form #correo, form #nombre {
+    width: 100%;
     padding: 10px;
+
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
+form #numeroCelular{
+    width: 100%;
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 /* Estilos para el botón de enviar */
 form input[type="submit"] {
     background-color: #fff;
@@ -323,11 +321,19 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: #f39656; /* Naranja pastel más oscuro al pasar el mouse */
     color: white;
+    
 }
-
 /* Estilo para el footer */
 footer {
     background-color: #ffcccc;
     text-align: center;
-    font-size: 13px;
+   font-size: 13px;
+    
+}
+
+
+footer p {
+    color: #333;
+  
+    margin: 0;
 }

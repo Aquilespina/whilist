@@ -386,13 +386,18 @@
 
     </div> <!-- Información sobre la selección -->
 
-    <form   action="datos.php" id="formulario"  method="post"   style="display: none;">
+    <form   action="conexion.php" id="formulario"  method="post"   style="display: none;">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required><br><br> <!-- Campo para el nombre (requerido) -->
         <label for="correo">Correo Electrónico:</label>
         <input type="email" id="correo" name="correo" required><br><br> <!-- Campo para el correo electrónico (requerido) -->
         <label for="numerocelular">Numero celular</label>
-        <input type="text" id="numerocelular" name="numero" required><br><br>
+<input type="text" id="numeroCelular" name="numeroCelular" placeholder="Número de celular">
+<br><br>
+
+<input type="text" name="nombreProducto" id="nombreProducto">
+<input type="text" name="valor" id="valor">
+
         <!-- Botón para enviar el formulario -->
         <input type="submit" value="Enviar">
     </form>
